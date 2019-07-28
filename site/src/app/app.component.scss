@@ -1,0 +1,29 @@
+.padder{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.links{
+    text-align: center;
+}
+
+.big-title{
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.content-wrapper{
+    margin: 30px auto;
+}
+
+@media (min-width: 40em){
+.content-wrapper{
+    width: 50%;
+}
+}
+
+p{
+    text-align: justify;
+}
