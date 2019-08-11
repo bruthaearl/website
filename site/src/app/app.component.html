@@ -1,38 +1,21 @@
-<div class="header-container padder">
-  <div class="content-wrapper">
+<div class="body-container mat-typography">
+  
+  <header class="header">
     <img src="assets/logo_big.png" class="logo">
-    <div class="links">
-      <button mat-button [matMenuTriggerFor]="menu">PROJECTS</button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>MIDIOT</button>
-        <button mat-menu-item>Lost and Found Lists</button>
-        <button mat-menu-item>Chrimbus 2018</button>
-        <button mat-menu-item>oakst.io</button>
-      </mat-menu>
-      <button mat-button>ABOUT</button>
-      <button mat-button>CONTACT</button>
-    </div>
-  </div>
+    <nav class="links">
+      <button mat-button routerLink="/projects" routerLinkActive="active-link">PROJECTS</button>
+      <button mat-button routerLink="/about" routerLinkActive="active-link">ABOUT</button>
+      <button mat-button routerLink="/contact" routerLinkActive="active-link">CONTACT</button>
+    </nav>
+  </header>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="footer">
+    &copy; 2019 oakst.io / jake
+  </footer>
 
 </div>
 
-<div class="content-container padder">
-  <div class="content-wrapper">
-    <section class="mat-typography">
-      <p>Hi, I'm Jake. This is my portfolio. I'm switching to 3rd-person now
-        because I want to sound like you're reading the "About the Author" section
-        on the back jacket of an interesting book that you rescued from the bottom
-        of the bargain bin at the used bookstore, downtown. You've never heard of the author before.
-      </p>
-      <p><em>OAK ST. ELECTRONICS is Jacob Earl Jones, a fledgling hobbyist and amateur professional.
-          This website serves as his portfolio and something tangible that he can put on the front of
-          his business card. Jake received his Bachelor's in Electrical Engineering and is currently
-          working towards a Master's in Computer Engineering with a focus on the Internet of Things.
-          Jake's professional interests include microcontrollers, embedded systems, circuit board design,
-          and internet-based technologies. Jake currently works for the federal government in (sometimes) sunny
-          Fort Walton Beach, Florida.
-        </em></p>
-      <router-outlet></router-outlet>
-    </section>
-  </div>
-</div>

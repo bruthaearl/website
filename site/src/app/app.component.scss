@@ -1,24 +1,30 @@
-.padder{
+.body-container{
     margin: 0 auto;
     max-width: 1200px;
-    padding-right: 16px;
-    padding-left: 16px;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 .links{
     text-align: center;
 }
 
-.content-wrapper{
-    margin: 20px auto;
+.header, .content{
+    margin: 10px auto;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
-.header-wrapper{
-    margin: 20px auto;
+.content{
+    flex: 1;
 }
 
 @media (min-width: 40em){
-.content-wrapper{
+.content{
     width: 50%;
 }
 }
@@ -35,4 +41,16 @@ p{
     margin-bottom: 20px;
     display: block;
 
+}
+
+.footer{
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.active-link{
+    text-decoration: underline;
+    text-decoration-color: #faa819;
 }
